@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Opera Sommet-Education</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Just an image -->
+<nav class="navbar navbar-light  bg-light  mx-auto">
+    <a class="navbar-brand  mx-sm-auto mr-auto " style="padding-bottom: 15px; padding-left: 15px; padding-right: 15px; float: none; text-align:center" href="#">
+        <img src="img/download.png" alt="" width="80px" />
+      </a>
+    
+    
+  </nav>
+  <div class="page-block">
+   
+        
+       <a> <img src="img/MICROS_LOGO.png"  alt="Image" class="center" height="100px" width="auto" style="display: block; margin: auto;"> </a> 
+  <h1 class="headingTop" style="display: block; margin: auto;">
+     
+  </h1>
+
+    <section class="gallery-block cards-gallery" >
+        <div class="container" >
+            
+            <div class="row  cardSommet ">
+                <div class="col-md-6 col-lg-6">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" onclick=onClick(0)>
+                            <img src="img/student.jpg" alt="Card Image" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">Student</a></h6>
+                            <p class="text-muted card-text">Login to have access to Opera for Students.</p>
+                            <button type="button" class="btn" onclick=onClick(0)>Access</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" onclick=onClick(1)>
+                            <img src="img/teacher.jpg" alt="Card Image" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">Teacher</a></h6>
+                            <p class="text-muted card-text">Login to have access to Opera for Staff.</p>
+                            <button type="button" class="btn" onclick=onClick(1)>Access</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        
+    </section>
+</div>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50 footerSommet">
+        <div class="container text-center">
+           <!-- <small>Copyright &copy; Sommet-Education.com</small>-->
+         
+
+        </div>
+        <div class="row">
+           
+                <div class="col-md-3 col-lg-3">
+                    <a><img src="img/Glion_logo.png" alt="Les Roches"></a>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <a><img src="img/LesRoches_logo.png"alt="Les Roches"></a>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <a><img src="img/ED_logo.png" alt="Les Roches"></a>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <a><img src="img/oracle.png" alt="Les Roches"></a>
+                </div>
+              
+                
+            
+        </div>
+      
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        // baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+
+        function onClick(opt) {
+
+            var optIndex = ["student", "staff"];
+            var optValue = { student: "https://www.google.pt", staff: "https://www.continente.pt" };
+            var valueURL = optValue[optIndex[opt]];
+
+            parent.location = valueURL;
+
+        }
+    </script>
+</body>
+
+</html>
